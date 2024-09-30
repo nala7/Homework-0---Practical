@@ -30,8 +30,4 @@ class NumpyBasics:
 
     def dot_1d_array_2d_array(self, a, m):
         # consider the 2d array to be like a matrix
-        dot_product = []
-        for row in m:
-            print(row)
-            dot_product.append(np.dot(a, row))
-        return dot_product
+        np.dot(a, m.T)
